@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:id="@+id/fromdateTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="17-01-2017"
+            android:textColor="#737171"
+            android:textSize="12sp"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="-3dp"
+            android:paddingRight="-3dp"
+            android:text="-"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/todateTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="17-01-2017"
+
+            android:textColor="#737171"
+            android:textSize="12sp"
+          />
+
+
+    </LinearLayout>
+
+  <ProgressBar
+      android:layout_width="match_parent"
+      android:layout_height="3dp"
+      android:id="@+id/progressbar"
+      style="@android:style/Widget.ProgressBar.Horizontal"
+
+      android:progressDrawable="@drawable/progressbarbackground"
+     />
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFF"
+    >
+
+    <TextView
+        android:paddingTop="-3dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalincomebackupTV"
+        android:text="3333"
+        android:textColor="#08a632"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="-3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalexpensebackupTV"
+            android:text="33"
+            android:textColor="#ff0000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+        <TextView
+            android:paddingTop="-3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalBackUpTV"
+            android:text="331111111333"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_weight="1"/>
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.aust.rakib.calculator.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Calculator"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FFF">
+
+        <TextView
+            android:id="@+id/calculatedvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="#515151"
+            android:layout_gravity="right"
+            android:textSize="33sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+               <Button
+                   android:id="@+id/sevenBT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="buttonPressed"
+                   android:text="7"
+                   android:background="@drawable/custombutton"
+                   android:textColor="#FFF"
+                   android:textStyle="bold"/>
+
+               <Button
+                   android:id="@+id/fourBT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="buttonPressed"
+                   android:text="4"
+                   android:background="@drawable/custombutton"
+                   android:textColor="#FFF"
+                   android:textStyle="bold"/>
+
+               <Button
+                   android:id="@+id/oneBT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="buttonPressed"
+                   android:text="1"
+                   android:background="@drawable/custombutton"
+                   android:textColor="#FFF"
+                   android:textStyle="bold"/>
+
+               <Button
+                   android:id="@+id/dotBT"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:onClick="buttonPressed"
+                   android:text="."
+                   android:background="@drawable/custombutton"
+                   android:textColor="#FFF"
+                   android:textStyle="bold"/>
+
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/eightBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="8"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/fiveBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="5"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/twoBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="2"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/zeroBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="0"
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <Button
+                android:id="@+id/nineBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="9"
+
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/sixBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="6"
+
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/threeBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="3"
+
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/equalBT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="buttonPressed"
+                android:text="="
+
+                android:background="@drawable/custombutton"
+                android:textColor="#FFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="192dp"
+          android:orientation="horizontal">
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="192dp"
+              android:orientation="vertical"
+              android:layout_weight="9">
+
+              <Button
+                  android:id="@+id/deleteBT"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:onClick="buttonPressed"
+                  android:text="DEL"
+
+                  android:background="@drawable/custombutton1"
+                  android:textColor="#FFF"
+                  android:textStyle="bold"/>
+
+              <Button
+                  android:id="@+id/divideBT"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:onClick="buttonPressed"
+                  android:text="/"
+
+                  android:background="@drawable/custombutton1"
+                  android:textColor="#FFF"
+                  android:textStyle="bold"/>
+
+              <Button
+                  android:id="@+id/multiBT"
+
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:onClick="buttonPressed"
+                  android:text="*"
+
+                  android:background="@drawable/custombutton1"
+                  android:textColor="#FFF"
+                  android:textStyle="bold"/>
+
+              <Button
+                  android:id="@+id/minusBT"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:onClick="buttonPressed"
+                  android:text="-"
+
+                  android:background="@drawable/custombutton1"
+                  android:textColor="#FFF"
+                  android:textStyle="bold"/>
+
+              <Button
+                  android:id="@+id/plusBT"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:onClick="buttonPressed"
+                  android:background="@drawable/custombutton1"
+                  android:textColor="#FFF"
+                  android:textStyle="bold"
+                  android:text="+" />
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@color/colorPrimary"></LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

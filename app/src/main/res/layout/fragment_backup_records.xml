@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aust.rakib.mywallet.Fragment.BackUpRecordsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:background="@drawable/backgroundcolour">
+       <Button
+           android:id="@+id/fromButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="From"
+           />
+
+       <Button
+           android:id="@+id/toButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="To"
+           android:visibility="gone"
+           />
+       <Button
+           android:id="@+id/saveButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Save Records"
+           android:visibility="gone"
+
+           />
+   </LinearLayout>
+
+</FrameLayout>

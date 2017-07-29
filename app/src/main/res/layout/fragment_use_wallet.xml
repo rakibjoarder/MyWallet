@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aust.rakib.mywallet.Fragment.UseWalletFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundcolour"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/amountET"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="#FFF"
+                android:hint="Amount"
+                android:textSize="16sp"
+                android:inputType="numberDecimal"
+                android:padding="5dp" />
+
+            <ImageButton
+                android:id="@+id/calculatorButton"
+                style="?android:buttonBarButtonStyle"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                android:layout_marginLeft="-35dp"
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/calculator" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/descriptionET"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:background="#FFF"
+            android:hint="Description"
+            android:padding="5dp"
+            android:textSize="16sp"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Type"
+    android:padding="4dp"
+    android:textStyle="bold"
+    android:textColor="#FFF"
+  />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Income"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/radio_expense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expense"
+                android:textStyle="bold"
+                android:textColor="#FFF"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/savebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Save"
+            android:text="Add Record"
+            android:padding="15dp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
